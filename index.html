@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<base target="_top">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DLTV Platform</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500;600;700&family=Sarabun:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div id="demoBar" class="demo-bar hidden">โหมดทดลอง: ข้อมูลเก็บในเบราว์เซอร์นี้ (ยังไม่ได้เชื่อม Google Sheets) · <a id="resetDemo">รีเซ็ตข้อมูลตัวอย่าง</a></div>
+<header class="top">
+  <a class="logo" data-go="home" aria-label="DLTV Platform หน้าหลัก">
+    <img id="brandLogo" class="logo-img hidden" alt="DLTV">
+    <span class="logo-txt"><span class="o">DLTV</span></span> Platform <small>1st Phase</small>
+  </a>
+  <nav class="nav" id="nav"></nav>
+  <div class="me" id="me"></div>
+</header>
+<main id="app"><div class="empty">กำลังโหลดข้อมูล…</div></main>
+<footer class="foot">
+  <img id="foundationLogo" class="foot-logo hidden" alt="มูลนิธิการศึกษาทางไกลผ่านดาวเทียม">
+  <div><b id="foundationName"></b><div class="small muted">DLTV Platform · Phase 1</div></div>
+</footer>
+<div id="modal"></div>
+<div id="toast"></div>
+<div id="tip"></div>
+<!-- ลำดับสำคัญ: core → views → Router → Main (Router อ้างถึงฟังก์ชัน view ตอนโหลด) -->
+<script src="config.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
